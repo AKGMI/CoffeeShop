@@ -63,7 +63,7 @@ const Payment = ({ selected, cancel }) => {
     if (isCardProcessing) {
         return (
             <div className="card-processing">
-                <img src="/images/card-icon.png" alt="Card Processing" className="card-icon" />
+                <img src={`${process.env.PUBLIC_URL}/images/card-icon.png`} alt="Card Processing" className="card-icon" />
                 <h2>Приложите карту к терминалу</h2>
                 <button className="cancel-button" onClick={resetPayment}>Отмена</button>
             </div>

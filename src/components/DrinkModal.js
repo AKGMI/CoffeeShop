@@ -13,9 +13,9 @@ const DrinkModal = ({ drink, onClose, onPayByCard, onPayByCash }) => {
     const currentPrice = drink.prices[selectedSize];
 
     const sizeIcons = {
-        200: '/images/icons/cup-small.png',
-        300: '/images/icons/cup-medium.png',
-        400: '/images/icons/cup-large.png',
+        200: `${process.env.PUBLIC_URL}/images/icons/cup-small.png`,
+        300: `${process.env.PUBLIC_URL}/images/icons/cup-medium.png`,
+        400: `${process.env.PUBLIC_URL}/images/icons/cup-large.png`,
     };
 
     return (

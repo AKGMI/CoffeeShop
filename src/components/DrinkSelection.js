@@ -10,47 +10,47 @@ const DrinkSelection = ({ onSelectDrink }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const categories = [
-        { id: 'Кофе', label: 'Кофе', icon: '/images/category-coffee.png' },
-        { id: 'Чай', label: 'Чай', icon: '/images/category-tea.png' },
-        { id: 'Молочный коктейль', label: 'Молочный коктейль', icon: '/images/category-milkshake.png' },
-        { id: 'Морсы и газ. напитки', label: 'Морсы и газ. напитки', icon: '/images/category-other.png' },
+        { id: 'Кофе', label: 'Кофе', icon: `${process.env.PUBLIC_URL}/images/category-coffee.png` },
+        { id: 'Чай', label: 'Чай', icon: `${process.env.PUBLIC_URL}/images/category-tea.png` },
+        { id: 'Молочный коктейль', label: 'Молочный коктейль', icon: `${process.env.PUBLIC_URL}/images/category-milkshake.png` },
+        { id: 'Морсы и газ. напитки', label: 'Морсы и газ. напитки', icon: `${process.env.PUBLIC_URL}/images/category-other.png` },
     ];
 
     const drinks = [
         {
             id: 1,
             name: 'Эспрессо',
-            image: '/images/drinks/espresso.png',
+            image: `${process.env.PUBLIC_URL}/images/drinks/espresso.png`,
             prices: { 200: 79, 300: 99, 400: 119 },
         },
         {
             id: 2,
             name: 'Эспрессо 2x',
-            image: '/images/drinks/espresso2x.png',
+            image: `${process.env.PUBLIC_URL}/images/drinks/espresso2x.png`,
             prices: { 200: 109, 300: 129, 400: 149 },
         },
         {
             id: 3,
             name: 'Американо',
-            image: '/images/drinks/americano.png',
+            image: `${process.env.PUBLIC_URL}/images/drinks/americano.png`,
             prices: { 200: 89, 300: 109, 400: 129 },
         },
         {
             id: 4,
             name: 'Латте',
-            image: '/images/drinks/latte.png',
+            image: `${process.env.PUBLIC_URL}/images/drinks/latte.png`,
             prices: { 200: 129, 300: 149, 400: 169 },
         },
         {
             id: 5,
             name: 'Капучино',
-            image: '/images/drinks/cappuccino.png',
+            image: `${process.env.PUBLIC_URL}/images/drinks/cappuccino.png`,
             prices: { 200: 129, 300: 149, 400: 169 },
         },
         {
             id: 6,
             name: 'Макиато',
-            image: '/images/drinks/macchiato.png',
+            image: `${process.env.PUBLIC_URL}/images/drinks/macchiato.png`,
             prices: { 200: 129, 300: 149, 400: 169 },
         },
     ];
@@ -93,7 +93,7 @@ const DrinkSelection = ({ onSelectDrink }) => {
                     </svg>
                 </div>
                 <button className="login-button">
-                    <img src="/images/phone-icon.png" alt="phone icon" className="phone-icon"/>
+                    <img src={`${process.env.PUBLIC_URL}/images/phone-icon.png`} alt="phone icon" className="phone-icon"/>
                     Вход / регистрация
                 </button>
             </header>

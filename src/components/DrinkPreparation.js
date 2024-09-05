@@ -48,7 +48,7 @@ const DrinkPreparation = () => {
                 </div>
             ) : (
                 <div className="preparation-ready">
-                <img src="/images/coffee-ready.png" alt="Coffee Ready" className="coffee-ready-icon" />
+                <img src={`${process.env.PUBLIC_URL}/images/coffee-ready.png`} alt="Coffee Ready" className="coffee-ready-icon" />
                     <h2>Напиток готов!</h2>
                     <p>вы можете забрать его</p>
                 </div>
