@@ -1,0 +1,68 @@
+.preparation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    transition: background-color 0.5s ease;
+    background-color: #FFFFFF;
+}
+
+.preparation-container.ready {
+    background-color: #FFD700;
+}
+
+.circle-timer {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.circle-timer svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.timer-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.timer-text h1 {
+    font-size: 48px;
+    color: #000;
+}
+
+.timer-text p {
+    margin-top: 10px;
+    color: #999999;
+    font-size: 14px;
+}
+
+.preparation-ready {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coffee-ready-icon {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.preparation-ready h2 {
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.preparation-ready p {
+    font-size: 18px;
+    color: #000000;
+}

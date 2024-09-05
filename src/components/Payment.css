@@ -1,0 +1,110 @@
+.payment-container {
+    padding: 20px;
+    background-color: #F5E1DC;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-title {
+    font-size: 24px;
+    color: #4A4A4A;
+    margin-bottom: 20px;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.payment-button {
+    background-color: #F5F5F5;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #4A4A4A;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+.payment-button.selected {
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.payment-details {
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    color: #4A4A4A;
+}
+
+.payment-action-button {
+    background-color: #FFD700;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #4A4A4A;
+    margin-top: 20px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.payment-action-button:hover {
+    background-color: #FFC300;
+}
+
+.card-processing, .card-failure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.card-processing {
+    background-color: #FFD700;
+}
+
+.card-failure {
+    color: #FFF;
+    background-color: #FF4C4C;
+}
+
+.card-icon, .failure-icon {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.card-processing h2, .card-failure h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.retry-button, .cancel-button {
+    background-color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.retry-button {
+    color: #FF4C4C;
+}
+
+.cancel-button {
+    color: #000;
+}

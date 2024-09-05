@@ -1,0 +1,29 @@
+.drink-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    border: solid 1px #dadada;
+}
+
+.drink-card:hover {
+    transform: scale(1.05);
+}
+
+.drink-image {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.drink-name {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.drink-price {
+    font-size: 16px;
+    color: #888;
+}
