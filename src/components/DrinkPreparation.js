@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './DrinkPreparation.css';
 
 const DrinkPreparation = () => {
-    const [timeLeft, setTimeLeft] = useState(30);
+    const preparationTime = 30;
+    const [timeLeft, setTimeLeft] = useState(preparationTime);
     const [isReady, setIsReady] = useState(false);
 
     useEffect(() => {
@@ -28,7 +29,7 @@ const DrinkPreparation = () => {
                             strokeWidth="4"
                             fill="none"
                             strokeDasharray="565.48"
-                            strokeDashoffset={-(timeLeft / 60) * 565.48}
+                            strokeDashoffset={-(timeLeft / preparationTime) * 565.48}
                             style={{transition: 'stroke-dashoffset 1s linear'}}
                             transform="rotate(-90 100 100)"
                         />
@@ -37,7 +38,7 @@ const DrinkPreparation = () => {
                             cy="10"
                             r="6"
                             fill="#F5D009"
-                            transform={`rotate(${(360 * (timeLeft / 60))} 100 100)`}
+                            transform={`rotate(${(360 * (timeLeft / preparationTime))} 100 100)`}
                             style={{transition: 'transform 1s linear'}}
                             />
                     </svg>
